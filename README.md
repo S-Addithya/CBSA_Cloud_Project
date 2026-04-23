@@ -1,73 +1,160 @@
-# React + TypeScript + Vite
+---
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🚀 TIVAS – Threat Identification & Visual Alert System
 
-Currently, two official plugins are available:
+An AI-powered system designed to enhance **urban public safety** using **machine learning, predictive analytics, and real-time visualization**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 📌 Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+TIVAS is an intelligent web-based platform that analyzes historical crime data to:
 
-## Expanding the ESLint configuration
+* Predict crime-prone areas
+* Visualize hotspots on interactive maps
+* Recommend safer travel routes
+* Provide real-time alerts
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+It shifts crime management from **reactive → proactive**.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+📄 Based on your project description and abstract 
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## ✨ Features
+
+### 🔍 Crime Prediction
+
+* Uses ML models to analyze:
+
+  * Crime type
+  * Location
+  * Time
+  * Frequency
+* Identifies patterns and predicts high-risk zones
+
+### 🗺️ Hotspot Visualization
+
+* Interactive maps (Google Maps / Mapbox)
+* Highlights crime-prone areas as **heat zones**
+
+### 🚶 Safe Route Recommendation
+
+* Evaluates multiple routes
+* Assigns **risk scores**
+* Suggests safest path
+* Real-time alerts near danger zones
+
+### 📊 Admin Dashboard
+
+* Crime trend analysis
+* Report generation
+* Patrol route optimization
+* Resource allocation insights
+
+---
+
+## 🧠 Tech Stack
+
+### Frontend
+
+* React
+* TypeScript
+* Vite
+
+### Backend / ML
+
+* Python (ML models)
+* Data Analytics pipelines
+
+### APIs & Tools
+
+* Google Maps API / Mapbox
+* Crime datasets
+* Predictive modeling algorithms
+
+---
+
+## ⚙️ Installation & Setup
+
+```bash
+# Clone the repo
+git clone https://github.com/your-username/tivas.git
+
+# Navigate to project
+cd tivas
+
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🧪 How It Works
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1. **Data Collection**
+
+   * Historical crime data ingestion
+
+2. **Pattern Analysis**
+
+   * ML models detect trends
+
+3. **Prediction Engine**
+
+   * Forecasts crime-prone areas
+
+4. **Visualization**
+
+   * Displays hotspots on maps
+
+5. **User Interaction**
+
+   * Safe routes + alerts
+
+(Exactly matches your workflow shown in slides )
+
+---
+
+## 📈 Use Cases
+
+* 🏙️ Smart Cities
+* 🚔 Law Enforcement
+* 🧑‍🤝‍🧑 Public Safety Apps
+* 🚶 Safe Navigation Systems
+
+---
+
+## 🎯 Benefits
+
+* Proactive crime prevention
+* Better resource allocation
+* Increased public awareness
+* Safer urban mobility
+
+---
+
+## 🚧 Future Enhancements
+
+* Real-time CCTV integration
+* AI-based anomaly detection
+* Mobile app version
+* Live crime feed APIs
+
+---
+
+## 👥 Team
+
+* S. Addithya
+* B. Indira Priyadarshini
+* Ch. Venkat Reddy
+* K. Hemanth
+
+---
+
+## 📜 License
+
+This project is for academic and research purposes.
